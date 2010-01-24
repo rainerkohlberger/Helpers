@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-script minSpecVersion="1.000000" authoringTool="com.apple.PackageMaker" authoringToolVersion="3.0.3" authoringToolBuild="174">
+    <title>Jajah Address Book Plug-In</title>
+    <options customize="never" allow-external-scripts="no" rootVolumeOnly="true"/>
+    <background file="background" alignment="bottomleft" scaling="proportional"/>
+    <welcome file="Welcome"/>
+    <choices-outline>
+        <line choice="choice10"/>
+        <line choice="choice9"/>
+    </choices-outline>
+    <choice id="choice10" title="Jajah Address Book Plug-In Preflight" start_visible="false">
+        <pkg-ref id="com.public.jajahAddressBookPlugin.preflight.pkg"/>
+    </choice>
+    <choice id="choice9" title="jajah address book plug-in">
+        <pkg-ref id="com.public.jajahAddressBookPlugin.jajah.pkg"/>
+    </choice>
+    <pkg-ref id="com.public.jajahAddressBookPlugin.preflight.pkg" installKBytes="0" version="1.0" auth="Root">file:./Contents/Packages/jajahAddressBookPluginPreflight.pkg</pkg-ref>
+    <pkg-ref id="com.public.jajahAddressBookPlugin.jajah.pkg" installKBytes="12" version="1" auth="Root">file:./Contents/Packages/jajah.pkg</pkg-ref>
+</installer-script>

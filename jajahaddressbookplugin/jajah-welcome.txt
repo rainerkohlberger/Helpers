@@ -1,0 +1,3 @@
+The JAJAH Plugin integrates click to call functionality into your Addressbook.
+
+Simply click on a phone number in your Addressbook and JAJAH initiates a phone call from your phone - landline or mobile - to the desired destination.
